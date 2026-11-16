@@ -245,25 +245,35 @@ p {
   }
 
   .project-details {
-    bottom: 73px;
+    position: static;
+    margin: 0;
   }
 
   .practice-description {
+    position: absolute;
+    right: 24px;
+    bottom: 92px;
+    left: 24px;
     max-width: 360px;
-    margin-bottom: 22px;
-    font-size: 16px;
+    margin-bottom: 0;
+    font-size: 15px;
     line-height: 22px;
   }
 
   .project-name {
+    position: absolute;
+    right: auto;
+    bottom: 57px;
+    left: 24px;
     font-size: 11px;
     line-height: 18px;
     letter-spacing: 0.88px;
+    text-align: left;
   }
 
   .site-footer {
     right: 0;
-    bottom: 17px;
+    bottom: 8px;
     left: 0;
     display: block;
     padding-right: 0;
@@ -294,7 +304,13 @@ p {
   }
 
   .practice-description {
-    font-size: 15px;
+    right: 20px;
+    left: 20px;
+    font-size: 14px;
     line-height: 21px;
+  }
+
+  .project-name {
+    left: 20px;
   }
 }
