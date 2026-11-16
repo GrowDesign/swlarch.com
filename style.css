@@ -176,12 +176,28 @@ p {
 }
 
 @media (max-width: 767px) {
+  html {
+    background-color: #060d09;
+    background-image: url("./assets/82aa7.png");
+    background-repeat: no-repeat;
+    background-position: 58% center;
+    background-size: cover;
+  }
+
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: transparent;
+  }
+
   .site-shell {
-    position: fixed;
-    inset: 0;
+    position: relative;
+    inset: auto;
     width: 100%;
-    min-height: 0;
-    height: auto;
+    min-height: 100vh;
+    min-height: 100dvh;
+    height: 100vh;
+    height: 100dvh;
   }
 
   .site-shell {
