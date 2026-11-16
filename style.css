@@ -162,6 +162,7 @@ p {
   z-index: 2;
   right: 0;
   bottom: 35px;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -201,7 +202,7 @@ p {
   .project-details,
   .site-footer {
     width: auto;
-    margin-inline: 30px;
+    margin-inline: 24px;
   }
 
   .header-inner {
@@ -210,9 +211,9 @@ p {
   }
 
   .brand-logo {
-    width: 100%;
-    max-width: 320px;
-    height: 25px;
+    width: calc(100% + 12px);
+    max-width: 360px;
+    height: 28px;
   }
 
   .contact-links {
@@ -234,7 +235,7 @@ p {
   }
 
   .practice-description {
-    max-width: 322px;
+    max-width: 360px;
     margin-bottom: 22px;
     font-size: 16px;
     line-height: 22px;
@@ -247,8 +248,11 @@ p {
   }
 
   .site-footer {
+    right: 0;
     bottom: 21px;
+    left: 0;
     display: block;
+    padding-right: 0;
     font-size: 11px;
     line-height: 17px;
     white-space: normal;
@@ -267,7 +271,7 @@ p {
   .header-inner,
   .project-details,
   .site-footer {
-    margin-inline: 24px;
+    margin-inline: 20px;
   }
 
   .contact-links {
