@@ -1,0 +1,278 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Inter:Medium";
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter:Regular";
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Libre Baskerville:Regular";
+  src: url("https://static.figma.com/font/LibreBaskerville_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    background: #f7f6f1;
+  }
+}
+
+.site-shell {
+  position: relative;
+  min-height: 700px;
+  height: 100dvh;
+  overflow: hidden;
+  background: #f7f6f1;
+  color: #fff;
+}
+
+.background-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  user-select: none;
+}
+
+.lower-gradient {
+  position: absolute;
+  inset: 48% 0 0;
+  background: linear-gradient(
+    to bottom,
+    rgb(6 13 9 / 0%) 0%,
+    rgb(6 13 9 / 64%) 55%,
+    rgb(6 13 9 / 94%) 100%
+  );
+  pointer-events: none;
+}
+
+.site-header {
+  position: absolute;
+  z-index: 2;
+  inset: 0 0 auto;
+  height: 110px;
+  background: rgb(255 255 255 / 90%);
+  color: rgb(6 13 9 / 94%);
+}
+
+.header-inner,
+.project-details,
+.site-footer {
+  width: min(81.25%, 1170px);
+  margin-inline: auto;
+}
+
+.header-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  display: block;
+  width: 556px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: "Inter:Medium", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  white-space: nowrap;
+}
+
+.contact-links a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 140ms ease;
+}
+
+.contact-links a:hover,
+.contact-links a:focus-visible {
+  color: #da2f20;
+}
+
+.contact-links a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.contact-divider,
+.contact-divider img {
+  display: block;
+  width: 1px;
+  height: 28px;
+}
+
+.project-details {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 35px;
+  left: 0;
+}
+
+.practice-description {
+  margin-bottom: 26px;
+  font-family: "Libre Baskerville:Regular", Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.project-name {
+  font-family: "Inter:Regular", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 1.04px;
+  text-transform: uppercase;
+}
+
+.site-footer {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  font-family: "Inter:Regular", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.site-footer img {
+  display: block;
+  width: 1px;
+  height: 24px;
+}
+
+@media (max-width: 767px) {
+  .site-shell {
+    min-height: 700px;
+  }
+
+  .background-photo {
+    object-position: 51.2% center;
+  }
+
+  .lower-gradient {
+    inset: 42.65% 0 0;
+  }
+
+  .site-header {
+    height: 104px;
+  }
+
+  .header-inner,
+  .project-details,
+  .site-footer {
+    width: auto;
+    margin-inline: 30px;
+  }
+
+  .header-inner {
+    display: block;
+    padding-top: 24px;
+  }
+
+  .brand-logo {
+    width: 100%;
+    max-width: 320px;
+    height: 25px;
+  }
+
+  .contact-links {
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .contact-divider,
+  .contact-divider img {
+    width: 1px;
+    height: 21px;
+  }
+
+  .project-details {
+    bottom: 73px;
+  }
+
+  .practice-description {
+    max-width: 322px;
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .project-name {
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: 0.88px;
+  }
+
+  .site-footer {
+    bottom: 21px;
+    display: block;
+    font-size: 11px;
+    line-height: 17px;
+    white-space: normal;
+  }
+
+  .site-footer span {
+    display: block;
+  }
+
+  .site-footer img {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .header-inner,
+  .project-details,
+  .site-footer {
+    margin-inline: 24px;
+  }
+
+  .contact-links {
+    gap: 7px;
+    font-size: 12px;
+  }
+
+  .practice-description {
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
