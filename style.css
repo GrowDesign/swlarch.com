@@ -184,6 +184,8 @@ p {
 @media (max-width: 767px) {
   .site-shell {
     min-height: 700px;
+    height: 100vh;
+    height: 100dvh;
   }
 
   .background-photo {
@@ -219,7 +221,7 @@ p {
   .contact-links {
     justify-content: flex-start;
     gap: 8px;
-    margin-top: 18px;
+    margin-top: 14px;
     font-size: 13px;
     line-height: 20px;
   }
