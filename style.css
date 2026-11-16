@@ -183,13 +183,13 @@ p {
 
 @media (max-width: 767px) {
   .site-shell {
-    min-height: 700px;
+    min-height: 100svh;
     height: 100vh;
     height: 100dvh;
   }
 
   .background-photo {
-    object-position: 51.2% center;
+    object-position: 58% center;
   }
 
   .lower-gradient {
