@@ -1,16 +1,58 @@
 <!doctype html>
-<html lang="<!-- figma:lang -->">
+<html lang="en">
   <head>
-    <!-- figma:head-start -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><!-- figma:title --></title>
-    <!-- figma:head-end -->
+    <meta
+      name="description"
+      content="Stephen Wheeler Landscape Architects creates distinctive outdoor spaces."
+    />
+    <link rel="icon" href="./favicon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Stephen Wheeler Landscape Architects</title>
   </head>
   <body>
-    <!-- figma:body-start -->
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- figma:body-end -->
+    <main class="site-shell">
+      <img
+        class="background-photo"
+        src="./assets/82aa7.png"
+        alt="Crissy Field and the San Francisco skyline viewed through mature cypress trees"
+      />
+      <div class="lower-gradient" aria-hidden="true"></div>
+
+      <header class="site-header">
+        <div class="header-inner">
+          <img
+            class="brand-logo"
+            src="./assets/2b918.png"
+            alt="Stephen Wheeler Landscape Architects"
+          />
+
+          <div class="contact-links" aria-label="Contact Stephen Wheeler Landscape Architects">
+            <a href="mailto:sjw@swlarch.com">sjw@swlarch.com</a>
+            <picture class="contact-divider" aria-hidden="true">
+              <source media="(max-width: 767px)" srcset="./assets/6310a.svg" />
+              <img src="./assets/d2b90.svg" alt="" />
+            </picture>
+            <a href="tel:+14152527075">415-252-7075</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="project-details" aria-label="About the practice and featured project">
+        <p class="practice-description">
+          Stephen Wheeler Landscape Architects creates distinctive outdoor spaces: educational and
+          corporate facilities, parks and open spaces, commercial and residential developments, and
+          private residences.
+        </p>
+        <p class="project-name">Crissy Field Overlook</p>
+      </section>
+
+      <footer class="site-footer">
+        <span>©2026 Stephen Wheeler Landscape Architects</span>
+        <img src="./assets/dcacb.svg" alt="" aria-hidden="true" />
+        <span>California License #2678</span>
+      </footer>
+    </main>
   </body>
 </html>
