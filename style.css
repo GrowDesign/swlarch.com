@@ -74,7 +74,7 @@ p {
 .header-inner,
 .project-details,
 .site-footer {
-  width: calc(100% - 96px);
+  width: calc(100% - 216px);
   max-width: 1600px;
   margin-inline: auto;
 }
